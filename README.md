@@ -90,7 +90,8 @@ Note: The `deepforest_model.pth` file is not included in the repository due to s
 
 The trained model weights (`deepforest_model.pth`) are too large to be included directly in this repository. You can download them from the following Google Drive link:
 
-[Download deepforest_model.pth]([https://drive.google.com/file/d/your_file_id_here/view?usp=sharing](https://drive.google.com/file/d/1fEzPdyQT-9otiOFCyNJ7KBYkzhbrB7C1/view?usp=sharing))
+[Download deepforest_model.pth] 
+([https://drive.google.com/file/d/1fEzPdyQT-9otiOFCyNJ7KBYkzhbrB7C1/view?usp=sharing])
 
 After downloading, place the `deepforest_model.pth` file in the root directory of the project before running the inference scripts.
 
