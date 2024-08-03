@@ -148,12 +148,12 @@ This project was completed as part of an internship with MUST University. Specia
 
 ## How to Use This Repository
 
-1. Clone the repository: `git clone [repository URL]`
+1. Clone the repository: `git clone https://github.com/fedy-culer/MUST-University-Internship.git`
 2. Follow the notebooks in order: `training.ipynb` for model training, `main.ipynb` for inference and evaluation.
 
 
 ## Contact
 
 For any queries regarding this project, please contact:
-[Fedy Ben Hassouna]
-[fedy.benahssouna@insat.ucar.tn]
+Fedy Ben Hassouna
+fedy.benahssouna@insat.ucar.tn
