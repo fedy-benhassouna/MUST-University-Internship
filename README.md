@@ -17,23 +17,23 @@ Cork oak forests play a crucial role in Mediterranean ecosystems and economies. 
 - Assist in monitoring forest health and biodiversity
 
 ## Repository Structure
-InternshipProject/
+#### InternshipProject/
 │
-├── Posttraining_Images/
-├── Predicted_Images/
-├── Pretraining_Images/
-├── Test_Images/
-├── Validation_Images/
-├── lightning_logs/
-├── Internship_Research/
+##### ├── Posttraining_Images/
+##### ├── Predicted_Images/
+##### ├── Pretraining_Images/
+##### ├── Test_Images/
+##### ├── Validation_Images/
+##### ├── lightning_logs/
+##### ├── Internship_Research/
 │
-├── Validation.csv
-├── annotation.csv
-├── annotations.csv
-├── deepforest_model.pth
-├── main.ipynb
-├── training.ipynb
-└── validations.CSV
+##### ├── Validation.csv
+##### ├── annotation.csv
+##### ├── annotations.csv
+##### ├── deepforest_model.pth
+##### ├── main.ipynb
+##### ├── training.ipynb
+##### └── validations.CSV
 
 ## Methodology
 
