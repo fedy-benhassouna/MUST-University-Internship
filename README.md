@@ -25,12 +25,10 @@ Cork oak forests play a crucial role in Mediterranean ecosystems and economies. 
 ##### ├── Test_Images/
 ##### ├── Validation_Images/
 ##### ├── lightning_logs/
-##### ├── Internship_Research/
 │
 ##### ├── Validation.csv
 ##### ├── annotation.csv
 ##### ├── annotations.csv
-##### ├── deepforest_model.pth
 ##### ├── main.ipynb
 ##### ├── training.ipynb
 ##### └── validations.CSV
@@ -77,6 +75,8 @@ Cork oak forests play a crucial role in Mediterranean ecosystems and economies. 
   - Seamlessly integrated biomass calculation with the detection pipeline.
   - Provided total biomass estimates for entire images, useful for forest inventory purposes.
 
+Note: The `deepforest_model.pth` file is not included in the repository due to size limitations. Please see the "Model Weights" section for download instructions.
+
 ## Key Files and Their Functions
 
 - `main.ipynb`: 
@@ -85,10 +85,20 @@ Cork oak forests play a crucial role in Mediterranean ecosystems and economies. 
 - `training.ipynb`: 
   - Comprehensive notebook detailing the model training process.
   - Includes data loading, model configuration, training loops, and model saving.
-- `deepforest_model.pth`: 
-  - Saved weights of the fine-tuned model.
-  - Can be easily loaded for inference or further training.
 
+## Model Weights
+
+The trained model weights (`deepforest_model.pth`) are too large to be included directly in this repository. You can download them from the following Google Drive link:
+
+[Download deepforest_model.pth]([https://drive.google.com/file/d/your_file_id_here/view?usp=sharing](https://drive.google.com/file/d/1fEzPdyQT-9otiOFCyNJ7KBYkzhbrB7C1/view?usp=sharing))
+
+After downloading, place the `deepforest_model.pth` file in the root directory of the project before running the inference scripts.
+
+## How to Use This Repository
+
+1. Clone the repository: `git clone [repository URL]`
+2. Download the `deepforest_model.pth` file from the Google Drive link provided above and place it in the project's root directory.
+3. Follow the notebooks in order: `training.ipynb` for model training, `main.ipynb` for inference and evaluation.
 ## Results and Performance
 
 The project achieved impressive results on the validation set:
@@ -102,7 +112,8 @@ These metrics indicate strong performance in detecting cork oak trees, with part
 
 ### Visualization Examples
 
-[Consider adding a few example images here showing original images, detected trees, and biomass estimates]
+![image](https://github.com/user-attachments/assets/15ba1392-2025-45f2-938a-b775b857f25f) ![image](https://github.com/user-attachments/assets/38938a32-8451-4742-a473-422eba51d894)
+
 
 ## Challenges and Solutions
 
@@ -131,9 +142,9 @@ These metrics indicate strong performance in detecting cork oak trees, with part
 ## Acknowledgements
 
 This project was completed as part of an internship with MUST University. Special thanks to:
-- [Supervisor Name] for guidance and expertise in remote sensing and forest ecology.
+- Our supervisor Soura Boulaares  for guidance and expertise in remote sensing and forest ecology.
+- My teamate Maram Makni for her responsability and help .
 - The DeepForest development team for their robust and adaptable framework.
-- [Any other relevant acknowledgements]
 
 ## How to Use This Repository
 
