@@ -1,2 +1,148 @@
-# MUST-University-Internship
+# Cork Oak Tree Detection and Biomass Estimation
+
+## Internship Project with MUST University
+
 This repository contains the code and documentation for a computer vision and research internship project focused on detecting cork oak trees and estimating their biomass using deep learning techniques.
+
+## Project Overview
+
+The goal of this project is to develop an advanced system that can accurately detect cork oak trees in aerial or satellite imagery and estimate their biomass. This project utilizes the DeepForest library and custom-trained models to achieve these objectives, contributing to more efficient forest management and environmental monitoring.
+
+### Significance
+
+Cork oak forests play a crucial role in Mediterranean ecosystems and economies. Accurate detection and biomass estimation of these trees can:
+- Aid in sustainable forest management
+- Support conservation efforts
+- Contribute to carbon sequestration studies
+- Assist in monitoring forest health and biodiversity
+
+## Repository Structure
+InternshipProject/
+│
+├── Posttraining_Images/
+├── Predicted_Images/
+├── Pretraining_Images/
+├── Test_Images/
+├── Validation_Images/
+├── lightning_logs/
+├── Internship_Research/
+│
+├── Validation.csv
+├── annotation.csv
+├── annotations.csv
+├── deepforest_model.pth
+├── main.ipynb
+├── training.ipynb
+└── validations.CSV
+
+## Methodology
+
+### 1. Data Collection and Preparation
+
+- **Image Acquisition**: Utilized Google Earth Pro to capture high-resolution images of cork oak forests.
+- **Annotation**: 
+  - Employed VGG Image Annotator (VIA) for precise tree labeling.
+  - Focused on identifying individual cork oak trees in diverse landscapes.
+- **Data Conversion**: 
+  - Developed custom scripts to convert VIA annotations to DeepForest compatible format.
+  - Ensured proper formatting of bounding box coordinates and labels.
+
+### 2. Model Architecture and Training
+
+- **Base Model**: Leveraged DeepForest, a deep learning library built on PyTorch, specializing in tree crown detection.
+- **Fine-tuning Process**: 
+  - Adapted the pre-trained DeepForest model to specifically recognize cork oak trees.
+  - Implemented in `training.ipynb` with detailed steps for reproducibility.
+- **Training Parameters**:
+  - Epochs: 10 (adjustable based on performance)
+  - Utilized custom loss functions and optimization techniques for improved accuracy.
+
+### 3. Prediction and Evaluation
+
+- **Model Application**: 
+  - Applied the trained model to test images, showcasing its ability to detect cork oak trees in new, unseen data.
+- **Visualization**: 
+  - Developed functions to visually represent detected trees with bounding boxes.
+  - Generated annotated images for easy interpretation of results.
+- **Metrics Calculation**: 
+  - Implemented a robust evaluation pipeline to assess model performance.
+  - Calculated key metrics including accuracy, precision, recall, and F1 score.
+
+### 4. Biomass Estimation
+
+- **Algorithm Development**: 
+  - Created a custom function to estimate tree biomass based on detected canopy area.
+  - Utilized allometric equations specific to cork oak trees for accurate estimation.
+- **Integration**: 
+  - Seamlessly integrated biomass calculation with the detection pipeline.
+  - Provided total biomass estimates for entire images, useful for forest inventory purposes.
+
+## Key Files and Their Functions
+
+- `main.ipynb`: 
+  - Core script for model inference and result visualization.
+  - Contains functions for loading images, making predictions, and displaying results.
+- `training.ipynb`: 
+  - Comprehensive notebook detailing the model training process.
+  - Includes data loading, model configuration, training loops, and model saving.
+- `deepforest_model.pth`: 
+  - Saved weights of the fine-tuned model.
+  - Can be easily loaded for inference or further training.
+
+## Results and Performance
+
+The project achieved impressive results on the validation set:
+
+- Accuracy: 0.8431
+- Precision: 0.86
+- Recall: 0.9773
+- F1 Score: 0.9149
+
+These metrics indicate strong performance in detecting cork oak trees, with particularly high recall suggesting the model rarely misses trees present in the images.
+
+### Visualization Examples
+
+[Consider adding a few example images here showing original images, detected trees, and biomass estimates]
+
+## Challenges and Solutions
+
+- **Data Variability**: Addressed the challenge of diverse tree appearances and landscapes by incorporating a wide range of images in the training set.
+- **Annotation Precision**: Developed strict annotation guidelines to ensure consistency across the dataset.
+- **Model Tuning**: Experimented with various hyperparameters and data augmentation techniques to optimize model performance.
+
+## Future Work and Potential Improvements
+
+1. **Dataset Expansion**: 
+   - Incorporate images from different seasons and geographical locations to improve model generalization.
+   - Consider adding multispectral imagery for enhanced feature detection.
+
+2. **Model Optimization**: 
+   - Explore advanced architectures like Mask R-CNN for instance segmentation.
+   - Implement ensemble methods to boost accuracy and robustness.
+
+3. **Integration and Deployment**:
+   - Develop a user-friendly interface for non-technical users.
+   - Create APIs for easy integration with existing forest management systems.
+
+4. **Extended Analysis**:
+   - Incorporate temporal analysis to study forest growth and changes over time.
+   - Explore the possibility of species differentiation within mixed forests.
+
+## Acknowledgements
+
+This project was completed as part of an internship with MUST University. Special thanks to:
+- [Supervisor Name] for guidance and expertise in remote sensing and forest ecology.
+- The DeepForest development team for their robust and adaptable framework.
+- [Any other relevant acknowledgements]
+
+## How to Use This Repository
+
+1. Clone the repository: `git clone [repository URL]`
+2. Follow the notebooks in order: `training.ipynb` for model training, `main.ipynb` for inference and evaluation.
+
+
+## Contact
+
+For any queries regarding this project, please contact:
+[Fedy Ben Hassouna]
+[fedy.benahssouna@insat.ucar.tn]
