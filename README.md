@@ -2,7 +2,7 @@
 
 ## Internship Project with MUST University
 
-This repository contains the code and documentation for a computer vision and research internship project focused on detecting cork oak trees and estimating their biomass using deep learning techniques.
+This repository contains the code and documentation for a computer vision and research 2 months internship project focused on detecting cork oak trees and estimating their biomass using deep learning techniques.
 
 ## Project Overview
 
